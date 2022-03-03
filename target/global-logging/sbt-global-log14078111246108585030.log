@@ -1,0 +1,115 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(ea6ac86b-0ef5-4337-a195-4ebccb53a05c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\hadij\Downloads\spark-lab-json\target\scala-2.12\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit.  If this error occurred during a test or run evaluation, it can be caused by the choice of ClassLoaderLayeringStrategy. Of the available strategies, ClassLoaderLayeringStrategy.ScalaLibrary will typically use the least metaspace.  To change the layering strategy for this session, run:[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mset ThisBuild / classLoaderLayeringStrategy := ClassLoaderLayeringStrategy.ScalaLibrary[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mjava.nio.channels.ClosedByInterruptException[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:162)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:285)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.Writer.write(Writer.java:249)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.write(XML.scala:112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.$anonfun$save$2(XML.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.save(XML.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.writeSuite(JUnitXmlTestsListener.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.endGroup(JUnitXmlTestsListener.scala:242)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$7(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$7$adapted(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1(TestFramework.scala:181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1$adapted(TestFramework.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.safeForeach(TestFramework.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.safeListenersCall(TestFramework.scala:166)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:278)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:330)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[31merror[0m] [0m[0mjava.nio.channels.ClosedByInterruptException[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:162)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:285)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:230)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.io.Writer.write(Writer.java:249)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.write(XML.scala:112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.$anonfun$save$2(XML.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.control.Exception$Catch.apply(Exception.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.xml.XML$.save(XML.scala:94)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.writeSuite(JUnitXmlTestsListener.scala:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.JUnitXmlTestsListener.endGroup(JUnitXmlTestsListener.scala:242)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$7(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.$anonfun$run$7$adapted(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1(TestFramework.scala:181)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.$anonfun$safeForeach$1$adapted(TestFramework.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.Iterator.foreach$(Iterator.scala:943)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach(IterableLike.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.safeForeach(TestFramework.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.safeListenersCall(TestFramework.scala:166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:156)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:278)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:330)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:435)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:829)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.nio.channels.ClosedByInterruptException[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx0WordcountSpec:[0m[0m

@@ -1,0 +1,4 @@
+[debug] [spark-lab-json-test] Classpath dependencies List()
+[debug] [spark-lab-json-test] Dependencies from configurations List(spark-lab-json)
+[debug] Bloop wrote the configuration of project 'spark-lab-json-test' to 'C:\Users\hadij\Downloads\spark-lab-json\.bloop\spark-lab-json-test.json'
+[success] Generated .bloop\spark-lab-json-test.json
